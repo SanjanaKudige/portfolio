@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
+	<link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet">
+
+	<title>Sanjana Kudige</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+	<div class="jumbotron text-center" style="height: 600px;">
+		<h1 class="display-4" style="padding-top: 200px;">SANJANA KUDIGE ANISH KUMAR</h1>
+		<p>Scroll down to get a slice of my life!</p>
+	</div>
+
+	<nav id="navbar" class=" navbar navbar-default fixed-top">
+		<a class="active" href="#about">About Me</a>
+		<a href="#techskills">Technical Skills</a>
+		<a href="#education">Education</a>
+		<a href="#workex">Work Experience</a>
+		<a href="#projects">Projects</a>
+	</nav>
+
+	<div class="content">
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
+		<script>
+
+			$(document).ready(function(){
+				$(window).scroll(function() {
+					$(".slideanim").each(function(){
+						var pos = $(this).offset().top;
+						var winTop = $(window).scrollTop();
+						if (pos < winTop + 600) {
+							$(this).addClass("slide");
+						}
+					});
+				});
+			})
+		</script>
+
+		<div id="about" class="container-fluid">
+			<div  class= "row slideanim text-center">
+				<div id="about" class="container-fluid">
+
+					<p>Nearly 2 years of professional experience in Software Engineering</p>
+					<ul>
+						<li>Experience in Java, Python-Flask, HTML5, CSS3, Bootstrap 4, JavaScript (ES6), jQuery, AJAX, MySQL, JMeter</li>
+						<li>Udacity Certified Front-End Developer looking for challenging opportunities in the field of Web applications development</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="techskills" class="container-fluid">
+			<div  class= "row slideanim text-center">
+				<h3>TECHNICAL SKILLS</h3><br>
+				<div>
+					<h4>Web Technologies</h4>
+					<div class="w-75 p-3" style="background-color: #666;">HTML5</div><br>
+					<div class="w-60 p-3" style="background-color: #777;">CSS3</div><br>
+					<div class="w-50 p-3" style="background-color: #888;">Javascript</div><br>
+					<div class="w-90 p-3" style="background-color: #999;">Python-Flask</div><br>
+				</div><br>
+				<div>
+					<h4>Programming Languages</h4>
+					<img class="rounded-circle" src="./Images/python.png" alt="Circle image">
+				</div>
+				<div>
+					<img class="rounded-circle" src="./Images/java.png" alt="Circle image">
+				</div>
+
+				<div>
+					<h4>Other Tools & Technologies</h4>
+
+				</div>
+			</div>
+
+			<div id="workex" class="container-fluid">
+				<div  class= "row slideanim">
+					<div id="workex" class="container-fluid">
+						<h4>WORK EXPERIENCE</h4>
+						<p>
+							Graduate Teaching Assistant at UT Arlington June 2018 - Present 
+							<ul>• Prepare tutorials for students at the Accounting department to improve understanding of projects assigned</ul>
+							<ul>• Assist professor in tutoring 100+ students, proctor examinations, evaluate projects and assessments </ul>
+							<ul>• Maintain and publish course content on class website and Blackboard</ul>
+						</p>
+						<p>
+							VoIP Engineer at Microland (for General Electric Client), Bangalore November 2015 - July 2017 
+							<ul>• Administration of Avaya Communication Manager, System-Platform, Session Manager and System Manager</ul>
+							<ul>• Created VDNs, skills, Vectors on ACD/Site Administrator, IVR, VAL boards, Class of Service & Class of Restrictions</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="education" class="container-fluid">
+				<div  class= "row slideanim">
+					<div>
+						<h5>Master's in Computer Science</h5>
+						<h6>University of Texas at Arlington</h6>
+						<p>August 2017- May 2019</p>
+						<p>Computer Science graduate majoring in the field of <b>Software Engineering</b> and <b>Databases</b></p>
+					</div>
+					<div>
+						<h5>Bachelor's in Information Science & Engineering</h5>
+						<h6>Visvesvaraya Technological University</h6>
+						<p>September 2011- June 2015</p>
+						<p>Completed Bachelor's with proficiency in <b>Data Structures</b>, <b>Algorithms</b>, <b>OOP concepts</b> and <b>Computer Networks</b></p>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="projects" class="container-fluid">
+				<div  class= "row slideanim">
+					
+					<div class="col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Earthquake Disaster Management</h5>
+								<p class="card-text">AWS, Python-Flask, D3.js, Memcache, JMeter</p>
+								<ul>
+									<li>Developed a REST based dynamic data visualization web application using D3.js, HTML5, Flask and deployed on AWS</li>
+									<li>Used Memcache to reduce the number of API calls to the external data source being used</li>
+									<li>Performed cluster analysis using K-Means clustering and analyzed the performance using JMeter</li>
+								</ul>
+								<a href="#" class="btn btn-primary">View Project</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Pacific Trails Resort</h5>
+								<p class="card-text">HTML5, CSS3, Bootstrap, PHP, JavaScript, CodeIgniter, AWS, phpMyAdmin</p>
+								<ul>
+									<li>Developed an E-commerce web application using HTML5, CSS3 for the users to make reservations/purchases at the resort</li>
+									<li>Designed the web application using the Model View Controller (MVC) pattern using CodeIgniter and deployed on AWS</li>
+									<li>Implemented client and server-side validation using JavaScript and PHP respectively</li>
+								</ul>
+								<a href="#" class="btn btn-primary">View Project</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Earthquake Disaster Management</h5>
+								<p class="card-text">AWS, Python-Flask, D3.js, Memcache, JMeter</p>
+								<ul>
+									<li>Developed a REST based dynamic data visualization web application using D3.js, HTML5, Flask and deployed on AWS</li>
+									<li>Used Memcache to reduce the number of API calls to the external data source being used</li>
+									<li>Performed cluster analysis using K-Means clustering and analyzed the performance using JMeter</li>
+								</ul>
+								<a href="#" class="btn btn-primary">View Project</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Pacific Trails Resort</h5>
+								<p class="card-text">HTML5, CSS3, Bootstrap, PHP, JavaScript, CodeIgniter, AWS, phpMyAdmin</p>
+								<ul>
+									<li>Developed an E-commerce web application using HTML5, CSS3 for the users to make reservations/purchases at the resort</li>
+									<li>Designed the web application using the Model View Controller (MVC) pattern using CodeIgniter and deployed on AWS</li>
+									<li>Implemented client and server-side validation using JavaScript and PHP respectively</li>
+								</ul>
+								<a href="#" class="btn btn-primary">View Project</a>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>				
+			</div>
+
+
+		</body>
+
+		<style>
+		body {
+			margin: 0;
+			font-size: 15px;
+			font-family: Arial, Helvetica, sans-serif;
+			padding-top: 20px;
+			overflow: 
+		}
+
+		.header {
+			background-color: #f1f1f1;
+			padding: 30px;
+			text-align: center;
+		}
+
+		.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+		#navbar a {
+			float: left;
+			display: block;
+			/*position: fixed;*/
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		#navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		#navbar a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.content {
+			padding: 16px;
+		}
+
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		.sticky + .content {
+			padding-top: 60px;
+		}
+
+		.row{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+	</style>
+	</html>
